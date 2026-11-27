@@ -53,8 +53,8 @@ function cariIndexById(id: string): number {
 // Menghitung total nilai stok = jumlah (harga x stok) semua produk (return number)
 function hitungTotalNilaiStok(): number {
   let total: number = 0;
-  for (let i = 0; i < daftarProduk.length; i++) {
-    total += daftarProduk[i].harga * daftarProduk[i].stok;
+  for (const p of daftarProduk) {
+    total += p.harga * p.stok;
   }
   return total;
 }

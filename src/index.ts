@@ -50,6 +50,20 @@ function cariIndexById(id: string): number {
   return daftarProduk.findIndex((p) => p.id.toLowerCase() === id.toLowerCase());
 }
 
+// Mengecek apakah input berupa angka valid dan tidak negatif (return boolean)
+function validasiAngka(input: string): boolean {
+  if (input.trim() === "") {
+    return false;
+  }
+  const angka: number = Number(input);
+  return !Number.isNaN(angka) && angka >= 0;
+}
+
+// Mengubah angka menjadi format rupiah, contoh: 15000 menjadi "Rp 15.000" (return string)
+function formatRupiah(angka: number): string {
+  return "Rp " + angka.toLocaleString("id-ID");
+}
+
 // Menghitung total nilai stok = jumlah (harga x stok) semua produk (return number)
 function hitungTotalNilaiStok(): number {
   let total: number = 0;

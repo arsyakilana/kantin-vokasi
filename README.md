@@ -65,3 +65,33 @@ kantin-vokasi/
 ├── tsconfig.json
 └── README.md
 ```
+
+# Kantin-Vokasi
+
+Aplikasi CLI manajemen produk kantin (CRUD) berbasis TypeScript.
+
+## Cara Menjalankan
+
+1. Clone repository ini
+2. Install dependency:
+   npm install
+3. Jalankan program:
+   npx ts-node src/index.ts
+
+## Fitur
+
+1. Tambah Produk
+2. Lihat Semua Produk
+3. Lihat Produk by ID
+4. Ubah Produk
+5. Hapus Produk
+6. Cari Produk
+7. Keluar
+
+## Pembagian Tugas
+
+| Anggota | Tugas |
+|---------|-------|
+| Firras  | Tambah produk + validasi input |
+| Rezel   | Lihat semua produk, lihat by ID, cari produk |
+| Arsya   | Ubah produk, hapus produk, README |
